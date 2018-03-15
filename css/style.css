@@ -1,0 +1,401 @@
+*{margin: 0;padding: 0}
+
+body{
+    background-color: #CECECE;
+}
+.wraper{
+    width: 980px;
+    margin: 10px auto;
+    background-color: #EDEDED;
+}
+.header{
+    
+}
+.menu{
+    background-color: dodgerblue;
+    min-height: 35px;
+    
+}
+.menu ul{
+    list-style: none;
+    min-height: 50px;
+    width: 80%;
+    margin-left: 20%;
+    
+}
+.menu ul li{
+    float: left;
+
+    display:block;
+    position: relative;
+    border-right: 1px solid #1b83e8;
+    border-left: 1px solid #4aa3f9;
+    
+}
+
+.menu ul li:last-child{
+    border-right:none;
+}
+.menu ul li:first-child {
+    border-left:none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    line-height: 20px;
+    display: block;
+    color:white;
+    transition: 1s;
+    
+}
+.menu ul li a:hover{
+    background-color: white;
+    color: dodgerblue;
+    transform: scale(1.1);
+}
+/*dropdown*/
+.menu ul li ul{
+    margin: 0px;
+    background-color: dodgerblue;
+    min-height: 200px;
+    min-width: 127px;
+    position: absolute;
+    left: -9999px;
+}
+.menu ul li:hover ul{
+    
+    left: 0px;
+}
+
+.menu ul li ul li{
+    clear: both;
+    border-bottom: 1px solid #1b83e8;
+    border-top: 1px solid #4aa3f9;
+    border-right:none;
+    border-left: none; 
+}
+.menu ul li ul li:first-child{
+    
+    border-top:none;
+    
+}
+.menu ul li ul li:last-child{
+    border-bottom: none;
+    
+    
+}
+/*multi dropdown menu*/
+.menu ul li ul li ul{
+    
+    margin-left: 127px;
+    margin-top: -50px;
+    top: -99999px;
+}
+.menu ul li ul li:hover ul{
+   
+    top: 50px;
+}
+.menu ul li ul li ul li{
+    position: relative;
+}
+.menu ul li ul li ul li ul{
+    position: absolute;
+    display: none;
+}
+.menu ul li ul li ul li:hover ul{
+    display: block;
+}
+/* end multi dropdown menu*/
+
+
+
+.img_show{
+    clear: both;
+    overflow: hidden;
+    padding: 40px;
+    min-height: 40px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #CECECE;
+}
+
+/* Animation */
+
+.left{
+   float: left;
+    width: 50%;
+   
+}
+.left .img_anim img{
+    width: 100%;
+    height: 250px;
+    
+    
+}    
+
+.left .img_anim{
+    border: 1px solid #CECECE;
+    padding: 8px;
+     height: 258px;
+    
+}
+.left .img_anim .a{
+    position: relative;
+    -webkit-animation-name: a;
+    -moz-animation-name: a;
+    -0-animation-name: a;
+    animation-name: a;
+    -webkit-animation-duration: 9s;
+    -moz-animation-duration: 9s;
+    -o-animation-duration: 9s;
+    animation-duration: 9s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.left .img_anim .b{
+    position: relative;
+    -webkit-animation-name: b;
+    -moz-animation-name: b;
+    -o-animation-name: b;
+    animation-name: b;
+    -webkit-animation-duration: 9s;
+    -moz-animation-duration: 9s;
+    -o-animation-duration: 9s;
+    animation-duration: 9s;
+    
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.left .img_anim .c{
+    position: relative;
+    -webkit-animation-name: c;
+    -moz-animation-name: c;
+    -o-animation-name: c;
+    animation-name: c;
+    -webkit-animation-duration: 9s;
+    -moz-animation-duration: 9s;
+    -o-animation-duration: 9s;
+    animation-duration: 9s;
+    
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.left .img_anim .d{
+    position: relative;
+    -webkit-animation-name: d;
+    -moz-animation-name: d;
+    -o-animation-name: d;
+    animation-name: d;
+   -webkit-animation-duration: 9s;
+    -moz-animation-duration: 9s;
+    -o-animation-duration: 9s;
+    animation-duration: 9s;
+    
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -o-animation-timing-function: linear;
+    animation-timing-function: ease-in;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction:alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+/*code a*/
+-webkit-@keyframes a{
+    0%{left: 0px;top: 0px}
+    25%{left: -2250px}
+    50%{left: -2250px}
+    100%{left: -2250px}
+}
+-moz-@keyframes a{
+    0%{left: 0px;top: 0px}
+    25%{left: -2250px}
+    50%{left: -2250px}
+    100%{left: -2250px}
+}
+-o-@keyframes a{
+    0%{left: 0px;top: 0px}
+    25%{left: -2250px}
+    50%{left: -2250px}
+    100%{left: -2250px}
+}
+@keyframes a{
+    0%{left: 0px;top: 0px}
+    25%{left: -2250px}
+    50%{left: -2250px}
+    100%{left: -2250px}
+}
+/*code b*/
+-webkit-@keyframes b{
+    0%{left: -2250px}
+    25%{left: 0px;top: -254px}
+    50%{left: -2250px}
+    100%{left: -2250px}
+}
+-moz-@keyframes b{
+    0%{left: -2250px}
+    25%{left: 0px;top: -254px}
+    50%{left: -2250px}
+    100%{left: -2250px}
+}
+-o-@keyframes b{
+    0%{left: -2250px}
+    25%{left: 0px;top: -254px}
+    50%{left: -2250px}
+    100%{left: -2250px}
+}
+@keyframes b{
+    0%{left: -2250px}
+    25%{left: 0px;top: -254px}
+    50%{left: -2250px}
+    100%{left: -2250px}
+}
+/*code c*/
+-webkit-@keyframes c{
+    0%{left: -2250px}
+    25%{left: -2250px}
+    50%{left:0px;top:-508px}
+    100%{left: -2250px}
+}
+-moz-@keyframes c{
+    0%{left: -2250px}
+    25%{left: -2250px}
+    50%{left:0px;top:-508px}
+    100%{left: -2250px}
+}
+-o-@keyframes c{
+    0%{left: -2250px}
+    25%{left: -2250px}
+    50%{left:0px;top:-508px}
+    100%{left: -2250px}
+}
+@keyframes c{
+    0%{left: -2250px}
+    25%{left: -2250px}
+    50%{left: 0px;top: -508px}
+    100%{left: -2250px}
+}/*code d*/
+-webkit-@keyframes d{
+    0%{left: -2250px}
+    25%{left: -2250px}
+    50%{left: -2250px}
+    100%{left: 0px;top: -762px}
+}
+-moz-@keyframes d{
+    0%{left: -2250px}
+    25%{left: -2250px}
+    50%{left: -2250px}
+    100%{left: 0px;top: -762px}
+}
+-o-@keyframes d{
+    0%{left: -2250px}
+    25%{left: -2250px}
+    50%{left: -2250px}
+    100%{left: 0px;top: -762px}
+}
+@keyframes d{
+    0%{left: -2250px}
+    25%{left: -2250px}
+    50%{left: -2250px}
+    100%{left: 0px;top: -762px}
+}
+
+.right{
+    float: right;
+    width: 35%
+}
+.right h2{
+    color: #4675B8;
+}
+.right p{
+    padding:15px 0px; 
+    line-height: 20px;
+    color: #686B72;
+}
+.gallery{
+   /* clear: both;*/
+    padding: 5px;
+    
+    overflow: hidden;
+    text-align: center;
+    margin: 10px 0px;
+}
+.img_item{
+    width: 30%;
+    height: 150px;
+    float: left;
+    padding: 30px 16px;
+    
+}
+.img_item img{
+    width: 250px;
+    height: 150px;
+    transition: 1.13s;
+    
+}.img_item img:hover{
+    transform:scale(1.33);
+    
+}
+.footer{
+    padding: 10px;
+    color: white;
+    border: bold;
+    min-height: 20px;
+    background-color: aqua;
+    clear:both;
+}
